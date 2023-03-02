@@ -1,6 +1,6 @@
 {
   "name": "random-binary-search-tree-visualization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "homepage": "./",
   "dependencies": {
