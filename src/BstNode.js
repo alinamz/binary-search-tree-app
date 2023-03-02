@@ -1,4 +1,3 @@
-// todo переименовать в BstNode
 export default class BstNode {
     constructor(value) {
         if (value == null) {

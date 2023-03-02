@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Node from './Node';
+import Node from './BstNode';
 import TreeNode from './TreeNode';
 
 let root = null;

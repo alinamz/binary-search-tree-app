@@ -46,16 +46,6 @@
   width: 80%;
 }
 
-.img {
-  margin-left: 51px;
-  font-size: 40px;
-}
-
-.img-right {
-  margin-right: 40px;
-  font-size: 40px;
-}
-
 .root__child_right::before {
   left: 0.087em;
   max-width: calc(50% + 0.0625em);
