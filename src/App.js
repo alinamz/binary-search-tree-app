@@ -1,4 +1,4 @@
-import './App.css';
+import './TreeNode.css';
 import React from 'react';
 import Node from './model/BstNode';
 import TreeNode from './TreeNode';

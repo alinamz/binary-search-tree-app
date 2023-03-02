@@ -1,5 +1,4 @@
-import './App.css';
-
+import './TreeNode.css';
 
 export default function TreeNode({ data }) {
     function renderTreeNode(node) {
