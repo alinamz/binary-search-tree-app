@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.root__children {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.root__child::before {
+  border-top: 0.0625em solid #000;
+  content: "";
+  display: block;
+  height: .0625em;
+  left: -3.03125em;
+  position: absolute;
+  top: -1.03125em;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.root__child:first-child:before {
+  left: calc(50% - 0.03125em);
+  max-width: calc(57% + 0.0625em);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root__child:last-child:before {
+  left: calc(2% - 0.03125em);
+  max-width: calc(48% + 0.0625em);
+}
+
+.root__child {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1em;
+  position: relative;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  margin-left: 51px;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-right {
+  margin-right: 40px;
+  font-size: 40px;
 }
+
+.root__child_right::before {
+  left: 0.087em;
+  max-width: calc(50% + 0.0625em);
+}
+
+.root::before {
+  border-left: 0.0625em solid #000;
+  content: "";
+  display: block;
+  height: 1em;
+  left: calc(50% - 0.03125em);
+  position: absolute;
+  width: 0.0625em;
+  top: -1.03125em
+}
+
+.root::after {
+  border-left: 0.0625em solid #000;
+  content: "";
+  display: block;
+  height: 1em;
+  left: calc(49% - 0.03125em);
+  position: absolute;
+  width: 0.0625em;
+  top: calc(99% + 0.03125em);
+}
+
+.root {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+  background: #00ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
